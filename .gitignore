@@ -120,7 +120,4 @@ buildNumber.properties
 .idea/misc.xml
 .idea/modules.xml
 .idea/workspace.xml
-README.md
 guide-logging-slf4j.iml
-pom.xml
-src/
