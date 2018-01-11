@@ -14,4 +14,14 @@ public class HelloLoggingTest {
         log.info("Welcome to logging with the SLF4J API.");
         log.trace("EXIT: main.");
     }
+
+    @Test
+    void testLogLevels() {
+        // Logging levels
+        log.warn("Might be a possible problem.");
+        log.error("Action required!");
+        log.info("Useful in production logs.");
+        log.debug("Information for developers.");
+        log.trace("Log everything with details!");
+    }
 }
