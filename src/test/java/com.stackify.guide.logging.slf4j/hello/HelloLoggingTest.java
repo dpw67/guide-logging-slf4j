@@ -18,8 +18,8 @@ public class HelloLoggingTest {
     @Test
     void testLogLevels() {
         // Logging levels
-        log.warn("Might be a possible problem.");
         log.error("Action required!");
+        log.warn("Might be a possible problem.");
         log.info("Useful in production logs.");
         log.debug("Information for developers.");
         log.trace("Log everything with details!");
