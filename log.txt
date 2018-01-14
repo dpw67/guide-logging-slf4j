@@ -1,0 +1,1 @@
+2018.01.08 20:53:08 CST [DEBUG] GreetingTest - com.stackify.guide.logging.ws.spring.hello.Greeting@45820e51
