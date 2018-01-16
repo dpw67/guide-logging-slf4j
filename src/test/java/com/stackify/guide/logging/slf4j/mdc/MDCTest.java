@@ -52,4 +52,16 @@ class MDCTest {
 
         MDC.clear();
     }
+
+    @Test
+    void testADMIN() {
+        // Note that the MDC API works, but simply uses a NOP adapter with SimpleLogger
+        // This will work when Logback or Log4J implementations are used.
+        MDC.put("userRole", "ADMIN");
+        MDC.put("userId", "jdoe");
+        MDC.put("action", "Create.user");
+
+        log.info("Admin Action");
+        MDC.clear();
+    }
 }

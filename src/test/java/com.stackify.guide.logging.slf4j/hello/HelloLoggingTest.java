@@ -3,6 +3,7 @@ package com.stackify.guide.logging.slf4j.hello;
 import com.stackify.guide.logging.slf4j.employee.Employee;
 import com.stackify.guide.logging.slf4j.employee.EmployeeService;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
