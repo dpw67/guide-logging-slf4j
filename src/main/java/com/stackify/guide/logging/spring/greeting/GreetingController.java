@@ -15,6 +15,7 @@ public class GreetingController {
     String home() {
         return "Hello Spring!";
     }
+
     @GetMapping("/greeting")
     Greeting greeting(
             @RequestParam(value = "name", defaultValue = "Spring") String name) {

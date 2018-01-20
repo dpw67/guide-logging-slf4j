@@ -24,6 +24,14 @@
     </parent>
 
     <properties>
+        <start-class>com.stackify.guide.logging.spring.greeting.GreetingApp</start-class>
+        <!-- <mainclass>
+            com.stackify.guide.logging.spring.greeting.GreetingApp
+        </mainclass> -->
+        <!-- <spring.boot.mainclass>
+            com.stackify.guide.logging.spring.greeting.GreetingApp
+        </spring.boot.mainclass> -->
+
         <java.version>1.8</java.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
@@ -33,37 +41,30 @@
         <project.reporting.outputEncoding>${file.encoding}</project.reporting.outputEncoding>
 
         <LOG_PATH>logs</LOG_PATH>
-
-        <start-class>com.stackify.guide.logging.spring.greeting.GreetingApp</start-class>
     </properties>
 
     <dependencies>
-
         <!-- Spring Boot: Web -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-        <!-- Spring Boot: Thymeleaf HTML templating -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
         </dependency>
 
-        <!-- Spring Boot: Data -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
 
-        <!-- Spring Boot: Data REST-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-rest</artifactId>
         </dependency>
 
-        <!-- Spring Boot: Developer tools -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
@@ -75,6 +76,13 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+
+        <!-- H2 Database -->
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <version>${h2.version}</version>
         </dependency>
 
         <!-- JUnit 5: Unit testing framework -->
@@ -108,7 +116,7 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
+             </plugin>
         </plugins>
     </build>
 

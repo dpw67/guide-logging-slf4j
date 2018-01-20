@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.slf4j.MDC;
-import org.slf4j.simple.SimpleLoggerFactory;
+// import org.slf4j.simple.SimpleLoggerFactory;
 import org.slf4j.spi.MDCAdapter;
 
 import java.util.Map;
@@ -17,8 +17,7 @@ import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class MDCTest {
-    private static final Logger log =
-            LoggerFactory.getLogger(MDCTest.class);
+    private static final Logger log = LoggerFactory.getLogger(MDCTest.class);
 
     @Test
     void testMDC() {

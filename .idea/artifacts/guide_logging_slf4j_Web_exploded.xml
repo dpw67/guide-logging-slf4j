@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="guide-logging-slf4j:Web exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/guide_logging_slf4j_Web_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="guide-logging-slf4j/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="guide-logging-slf4j" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

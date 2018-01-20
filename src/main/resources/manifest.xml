@@ -1,2 +1,2 @@
 mainClass: GreetingApp
-packageName: com.stackify.guide.logging.spring
+packageName: com.stackify.guide.logging.spring.greeting
